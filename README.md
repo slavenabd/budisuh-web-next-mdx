@@ -1,7 +1,7 @@
-# Next.js + Contentlayer
+# Budi suh: sve o bijegu mokraće
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+Saznaj sve o nevoljnom bijegu mokraće, noćnom mokrenju, učestalom mokrenju i hitnosti kroz edukativne i praktične savjete koje vam donosi liječnik pedijatar nefrolog.
 
-https://next-contentlayer.vercel.app
+https://budisuh.eu
 
 
