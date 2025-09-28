@@ -1,14 +1,23 @@
-// app/blog/[slug]/opengraph-image.tsx
-import { ImageResponse } from "@vercel/og";
-import { allPosts } from "contentlayer/generated";
-export const runtime = "edge";
+import { ImageResponse } from "next/og";
 
-export async function GET(
-  req: Request,
-  { params: { slug } }: { params: { slug: string } }
-) {
-  const post = allPosts.find(p => p.slug === slug);
+import { allPosts } from "contentlayer/generated";
+
+export const runtime = "edge";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+
+export default function Image({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const slug = params.slug ?? "";
+  const post = allPosts.find(
+    entry => entry.slug === slug && entry.status !== "draft"
+  );
+
   const title = post?.title ?? "Article";
+
   return new ImageResponse(
     (
       <div
@@ -28,6 +37,6 @@ export async function GET(
         </div>
       </div>
     ),
-    { width: 1200, height: 630 }
+    size
   );
 }

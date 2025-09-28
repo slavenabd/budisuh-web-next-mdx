@@ -1,18 +1,32 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypePrettyCode from "rehype-pretty-code";
-import readingTime from "reading-time"
+const WORDS_PER_MINUTE = 200;
+
+const readingTime = (text) => {
+  const words = text.split(/\s+/).filter(Boolean).length;
+  const minutes = words / WORDS_PER_MINUTE;
+
+  return {
+    text: `${Math.max(1, Math.ceil(minutes))} min read`,
+    minutes,
+    time: Math.ceil(minutes * 60 * 1000),
+    words,
+  };
+};
+
+const removeDirectoryPrefix = (doc, prefix) =>
+  doc._raw.flattenedPath.replace(new RegExp(`^${prefix}/`), "");
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
-const computedFields = {
+const pageComputedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    resolve: doc => removeDirectoryPrefix(doc, "pages"),
   },
-  slugAsParams: {
+  url: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    resolve: doc => `/${removeDirectoryPrefix(doc, "pages")}`,
   },
-}
+};
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -36,8 +50,18 @@ export const Post = defineDocumentType(() => ({
   },
 }));
 
+export const Page = defineDocumentType(() => ({
+  name: "Page",
+  filePathPattern: `pages/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    description: { type: "string" },
+  },
+  computedFields: pageComputedFields,
+}));
+
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Post],
-  mdx: { rehypePlugins: [[rehypePrettyCode, { theme: "github-dark" }]] },
+  documentTypes: [Post, Page],
 })
