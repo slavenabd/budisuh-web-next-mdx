@@ -40,6 +40,7 @@ export const Post = defineDocumentType(() => ({
     tags: { type: "list", of: { type: "string" } },
     cover: { type: "string" },                // /public/images/my-cover.jpg
     status: { type: "string", default: "published" }, // or draft
+    author: { type: "string", required: true},
   },
   computedFields: {
     url: { type: "string", resolve: (doc) => `/blog/${doc.slug}` },
