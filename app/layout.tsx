@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SITE } from "@/lib/seo"
+import { Insights } from './insights';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
@@ -43,4 +44,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </body>
     </html>
   )
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <Insights />
+      </body>
+    </html>
+  );
 }
