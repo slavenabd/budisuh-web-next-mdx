@@ -42,96 +42,79 @@ Svako dijete s enurezom treba ispuniti dnevnik kroz dva dana.
 Dnevnik otkriva kapacitet mjehura, noćnu proizvodnju mokraće i navike pijenja.
 Neinvazivan je, jednostavan i daje objektivne podatke.
 
-'''html
-<section class="cta-bedry" role="region" aria-labelledby="cta-bedry-title">
-  <div class="cta-wrap">
-    <h2 id="cta-bedry-title">Kako BeDRY može pomoći?</h2>
+export function BedryCta() {
+  return (
+    <section className="cta-bedry" role="region" aria-labelledby="cta-bedry-title">
+      <div className="cta-wrap">
+        <h2 id="cta-bedry-title">Kako BeDRY može pomoći?</h2>
 
-    <p>BeDRY je digitalni dnevnik mokrenja i pijenja. Vodite dnevnik kroz 2 dana (najpraktičnije je vikendom) i dobit ćete automatsko izvješće.</p>
+        <p>BeDRY je digitalni dnevnik mokrenja i pijenja. Vodite dnevnik kroz 2 dana (najpraktičnije je vikendom) i dobit ćete automatsko izvješće.</p>
 
-    <p>Jednostavno podijelite izvješće s vašim liječnikom unosom e-mail adrese liječnika ili korisničkog imena kojim se služi.</p>
+        <p>Jednostavno podijelite izvješće s vašim liječnikom unosom e-mail adrese liječnika ili korisničkog imena kojim se služi.</p>
 
-    <p class="emph">Započnite vođenje dnevnika već danas i otkrijte što je uzrok bijega mokraće!</p>
+        <p className="emph">Započnite vođenje dnevnika već danas i otkrijte što je uzrok bijega mokraće!</p>
 
-    <div class="cta-actions">
-      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.bedry.mobile">Preuzmi BeDRY</a>
-      <a class="btn btn-outline" href="https://bedry.app">Započni dnevnik</a>
-    </div>
-  </div>
-  
-    <style>
-    .cta-bedry {
-      --primary: #337DFF;
-      --ink: #292A26;
-      --success: #0CC247;
-      --bg: #F8F9FB; /* off-white */
-      --muted: #E9ECEF; /* light gray line */
-      color: var(--ink);
-      display: block;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      max-width: 900px;
-    }
-    .cta-bedry .cta-wrap {
-      background: var(--bg);
-      border: 1px solid var(--muted);
-      border-radius: 20px;
-      padding: 1.25rem;
-      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
-    }
-    .cta-bedry h2 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.5rem;
-      line-height: 1.2;
-      letter-spacing: -0.01em;
-    }
-    .cta-bedry p { margin: 0.5rem 0; }
-    .cta-bedry .emph {
-      margin-top: 0.75rem;
-      font-weight: 600;
-    }
-    .cta-bedry .cta-actions {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .cta-bedry .btn {
-      display: inline-block;
-      padding: 0.7rem 1rem;
-      border-radius: 20px;
-      font-weight: 600;
-      text-decoration: none;
-      line-height: 1;
-      transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
-      border: 2px solid transparent;
-    }
-    .cta-bedry .btn-primary {
-      background: var(--primary);
-      color: #fff;
-    }
-    .cta-bedry .btn-primary:hover { transform: translateY(-1px); }
-    .cta-bedry .btn-outline {
-      background: transparent;
-      color: var(--primary);
-      border-color: var(--primary);
-    }
-    .cta-bedry .btn-outline:hover {
-      background: rgba(41,42,38,0.06);
-    }
-    .cta-bedry .note {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      color: #3b3b3b;
-    }
-    @media (min-width: 640px) {
-      .cta-bedry h2 { font-size: 1.8rem; }
-      .cta-bedry .cta-wrap { padding: 1.5rem; }
-      .cta-bedry .btn { padding: 0.8rem 1.1rem; }
-    }
-  </style> 
-</section>
-'''
+        <div className="cta-actions">
+          <a className="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.bedry.mobile">Preuzmi BeDRY</a>
+          <a className="btn btn-outline" href="https://bedry.app">Započni dnevnik</a>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .cta-bedry {
+          --primary: #337DFF;
+          --ink: #292A26;
+          --success: #0CC247;
+          --bg: #F8F9FB;
+          --muted: #E9ECEF;
+          color: var(--ink);
+          display: block;
+          margin: 2rem auto;
+          padding: 0 1rem;
+          max-width: 900px;
+        }
+        .cta-wrap {
+          background: var(--bg);
+          border: 1px solid var(--muted);
+          border-radius: 20px;
+          padding: 1.25rem;
+          box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+        h2 {
+          margin: 0 0 0.5rem 0;
+          font-size: 1.5rem;
+          line-height: 1.2;
+          letter-spacing: -0.01em;
+        }
+        p { margin: 0.5rem 0; }
+        .emph { margin-top: 0.75rem; font-weight: 600; }
+        .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
+        .btn {
+          display: inline-block;
+          padding: 0.7rem 1rem;
+          border-radius: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          line-height: 1;
+          transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+          border: 2px solid transparent;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { transform: translateY(-1px); }
+        .btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
+        .btn-outline:hover { background: rgba(41,42,38,0.06); }
+        .note { margin-top: 0.75rem; font-size: 0.9rem; color: #3b3b3b; }
+        @media (min-width: 640px) {
+          h2 { font-size: 1.8rem; }
+          .cta-wrap { padding: 1.5rem; }
+          .btn { padding: 0.8rem 1.1rem; }
+        }
+      `}</style>
+    </section>
+  );
+}
+
+<BedryCta />
 
 ## Prvi korak liječenja: uroterapija i regulacija stolice
 
