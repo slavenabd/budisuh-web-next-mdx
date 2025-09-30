@@ -1,0 +1,149 @@
+---
+title: Režim pijenja i mokrenja: prvi korak u liječenju noćnog mokrenja
+description: Režim pijenja i mokrenja je prvi korak u liječenju noćnog mokrenja i dnevnih bijegova mokraće. Saznajte kako ga provoditi i što uključuje.
+date: "2019-12-30"
+slug: rezim-pijenja-i-mokrenja-prvi-korak-do-suhoce
+author: dr. sc. Slaven Abdović, dr. med.
+---
+
+> Vrijeme čitanja: 5 minuta
+
+Režim pijenja i mokrenja je prvi korak u liječenju noćnog mokrenja (enureze) i dnevnih bijegova mokraće.
+U ovom članku objašnjavam zašto je tako važan, što sve uključuje i kako ga uvesti kod djeteta.
+
+**Savjet za roditelje: pravilno vođenje dnevnika kroz aplikaciju [BeDRY](https://home.bedry.app) olakšava uvođenje režima i daje automatsko izvješće koje liječnik može odmah koristiti.**
+
+## Treba li liječiti noćno mokrenje?
+
+Noćno mokrenje (enureza) je jedan od najčešćih problema u dječjoj dobi i čest razlog posjeta pedijatru:
+- Negativno utječe na kvalitetu života obitelji
+- Smanjuje samopouzdanje djeteta
+- Povećava rizik zadirkivanja i socijalnih poteškoća
+
+**Ako dijete u dobi od 5 godina i dalje mokri u krevet, potrebno je potražiti liječničku pomoć i započeti liječenje.**
+
+## Režim pijenja i mokrenja kao temelj uspješnog liječenja
+
+Velik broj djece s enurezom nema zdrave navike: piju vrlo malo tijekom dana, a većinu tekućine nadoknađuju navečer:
+- To otežava roditelju ograničavanje večernjeg unosa
+- Kasni unos mlijeka, sokova i čaja povećava noćnu proizvodnju mokraće
+- Zadržavanje mokraće i preskakanje odlazaka na WC pogoršavaju tegobe
+
+**Znanstveni dokazi pokazuju da je unos tekućine raspoređen tijekom dana povezan s boljim ishodom liječenja.**
+
+## Kako pravilno provoditi režim pijenja i mokrenja?
+
+Režim je dio standardne uroterapije i uključuje:
+
+A. Unos tekućine prema tjelesnoj masi.
+10 kg: 1 L/dan
+20 kg: 1,5 L/dan
+45 kg: 2 L/dan
+
+B. Raspored unosa: npr. 0,5 L do 12h, 0,5 L do 16h, 0,5 L do 19h.
+
+C. Izbjegavati napitke iza 16h koji djeluju diuretski (mlijeko, čaj, sokovi).
+
+D. Izbjegavati citrusne napitke kod djece s hitnošću i učestalim mokrenjem
+
+E. Redovito mokrenje u budnosti, ne dopustiti da prođe 3,5-4h bez mokrenja
+
+F. Obavezno mokrenje prije spavanja
+
+## Regulacija stolice je obavezni dio uroterapije
+
+Dio standardne uroterapije je i liječenje opstipacije (zatvora). Djeca s opstipacijom imaju čak 7 puta veći rizik od pogoršanja enureze i slabijeg uspjeha liječenja.
+
+**BeDRY dnevnik uključuje i dnevnik stolice, što liječniku daje kompletnu sliku navika i tjelesnih funkcija.**
+
+## Kada režim nije dovoljan
+
+Kod djece koja unatoč urednom režimu i dalje mokre u krevet, potrebno je ispuniti dnevnik mokrenja i pijenja kako bi se utvrdio uzrok: mali kapacitet mjehura ili noćna poliurija.
+
+
+export function BedryCta() {
+  return (
+    <section className="cta-bedry" role="region" aria-labelledby="cta-bedry-title">
+      <div className="cta-wrap">
+        <h2 id="cta-bedry-title">Kako BeDRY može pomoći?</h2>
+
+        <p>BeDRY je digitalni dnevnik mokrenja i pijenja. Vodite dnevnik kroz 2 dana (najpraktičnije je vikendom) i dobit ćete automatsko izvješće.</p>
+
+        <p>Jednostavno podijelite izvješće s vašim liječnikom unosom e-mail adrese liječnika ili korisničkog imena kojim se služi.</p>
+
+        <p className="emph">Započnite vođenje dnevnika već danas i otkrijte što je uzrok bijega mokraće!</p>
+
+        <div className="cta-actions">
+          <a className="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.bedry.mobile">Preuzmi BeDRY</a>
+          <a className="btn btn-outline" href="https://bedry.app">Započni dnevnik</a>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .cta-bedry {
+          --primary: #337DFF;
+          --ink: #292A26;
+          --success: #0CC247;
+          --bg: #F8F9FB;
+          --muted: #E9ECEF;
+          color: var(--ink);
+          display: block;
+          margin: 0rem auto;
+          padding: 0 1rem;
+          max-width: 900px;
+        }
+        .cta-wrap {
+          background: var(--bg);
+          border: 1px solid var(--muted);
+          border-radius: 20px;
+          padding: 1.25rem;
+          box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+        h2 {
+          margin: 0 0 0 0;
+          font-size: 1.5rem;
+          line-height: 1.2;
+          letter-spacing: -0.01em;
+        }
+        .cta-bedry h2,
+        .dark .cta-bedry h2 {
+        color: var(--ink);
+        }
+        p { margin: 0.5rem 0; }
+        .emph { margin-top: 0.75rem; font-weight: 600; }
+        .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
+        .btn {
+          display: inline-block;
+          padding: 0.7rem 1rem;
+          border-radius: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          line-height: 1;
+          transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+          border: 2px solid transparent;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { transform: translateY(-1px); }
+        .btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
+        .btn-outline:hover { background: rgba(41,42,38,0.06); }
+        .note { margin-top: 0.75rem; font-size: 0.9rem; color: #3b3b3b; }
+        @media (min-width: 640px) {
+          h2 { font-size: 1.8rem; }
+          .cta-wrap { padding: 1.5rem; }
+          .btn { padding: 0.8rem 1.1rem; }
+        }
+      `}</style>
+    </section>
+  );
+}
+
+<BedryCta />
+
+## Ukratko
+
+- Režim pijenja i mokrenja je temelj uspješnog liječenja enureze.
+- Dio je standardne uroterapije koja uključuje i regulaciju stolice.
+- Nepridržavanje režima u pravilu dovodi do lošiojeg uspjeha liječenja
+- Ako režim nije dovoljan u kontroli noćnog mokrenja, potrebno je voditi dnevnik mokrenja i pijenja radi utvrđivanja uzroka tegoba.
+
+Prvi korak već danas: Preuzmite [BeDRY](https://home.bedry.app) aplikaciju i započnite vođenje digitalnog dnevnika koji će vam pomoći u usvajanju režima i ubrzati put prema suhim noćima.
