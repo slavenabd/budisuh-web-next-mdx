@@ -16,7 +16,7 @@ export function generateMetadata(): Metadata {
 
   if (!page) {
     return {
-      title: "About",
+      title: "O nama",
       description: SITE.defaultDescription,
     };
   }

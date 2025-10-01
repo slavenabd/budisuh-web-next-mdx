@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <main className="mx-auto max-w-3xl p-6">
-      <h1 className="text-3xl font-bold mb-6">Articles</h1>
+      <h1 className="text-3xl font-bold mb-6">Objave</h1>
       <ul className="space-y-6">
         {posts.map(p => (
           <li key={p.slug}>

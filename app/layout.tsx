@@ -21,7 +21,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="hr">
       <body
         className="antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50"
       >
@@ -31,8 +31,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
-                  <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
+                  <Link href="/">Naslovnica</Link>
+                  <Link href="/about">O nama</Link>
                 </nav>
               </div>
             </header>
