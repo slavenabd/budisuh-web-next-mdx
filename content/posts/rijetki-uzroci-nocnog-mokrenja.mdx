@@ -1,0 +1,173 @@
+---
+title: Rijetki uzroci noćnog mokrenja, kada posumnjati i što učiniti
+description: Saznajte koji su rijetki uzroci noćnog mokrenja kod djece, kada na njih posumnjati i kako BeDRY aplikacija pomaže u bržoj dijagnostici i liječenju.
+date: "2023-2-21"
+slug: rijetki-uzroci-nocnog-mokrenja
+author: dr. sc. Slaven Abdović, dr. med.
+---
+
+> Vrijeme čitanja: 9 minuta
+
+Noćno mokrenje (enureza) čest je simptom u dječjoj dobi. U većine djece nestane samo od sebe, ali kod dijela djece problem se nastavlja i nakon 5. godine života.
+
+Neliječeno noćno mokrenje:
+- snižava samopouzdanje
+- narušava odnose s vršnjacima
+- povećava rizik zadirkivanja
+- utječe na školski uspjeh
+
+Zato je važno otkriti uzrok enureze i ciljano ga liječiti. Najčešće je riječ o nesrazmjeru kapaciteta mjehura i noćne proizvodnje mokraće, ali ponekad su prisutni rijetki uzroci koje treba prepoznati.
+
+**Savjet: Vođenje BeDRY dnevnika mokrenja i poijenja pomaže liječniku utvrditi uzrok noćnog mokrenja i skratiti put do potpunog izliječenja.**
+
+## Kada posumnjati na rijetki uzrok noćnog mokrenja?
+
+Rijetki uzroci enureze češći su ako:
+- se enureza javila nakon razdoblja potpune suhoće (sekundarna enureza)
+- postoje dnevni simptomi (učestalo mokrenje, hitnost, bijeg mokraće)
+- dijete ima infekcije mokraćnih putova
+- u obitelji postoje bubrežni kamenci
+- dijete mršavi, puno jede i pije (sumnja na šećernu bolest)
+- dijete je prošlo kroz psihološku traumu
+- liječenje standardnim metodama ne daje rezultat
+
+Prednost BeDRY aplikacije: vođenjem dnevnika liječnik može vidjeti sumnjive obrasce (veliki broj mokrenja kroz dan, nevoljni bijeg mokraće u budnosti, opstipacija, visok indeks hiperaktivnosti, preveliku udio mokrenja malog volumena).
+
+## Najčešći rijetki uzroci noćnog mokrenja
+
+### 1. Infekcija mokraćnih putova
+
+Dijagnosticira se analizom urina i urinokulturom. Često je praćena bolom, učestalim mokrenjem i sekundarnom enurezom.
+
+### 2. Šećerna bolest
+
+Simptomi: povećani unos tekućine kroz dan i pojačana žeđ, gubitak tjelesne mase, obilno mokrenje. Dijagnosticira se mjerenjem koncentracije glukoze u krvi. Prisustvo glukoze u mokraće povećava sumnju na šećernu bolest. 
+
+### 3. Hiperkalciurija (povećan gubitak kalcija mokraćom)
+
+Prisutan u ~23% djece s monosimptomatskom enurezom. Udružena je s povećanom noćnom proizvodnjom mokraće.
+
+### 4. Prekomjerno aktivni mokraćni mjehur
+
+Prezentira se hitnosti, tj naglim i neodgodivim porivima za mokrenje bez infekcije mokraćnih putova. Tegobe mogu biti i bijeg mokraće u budnosti i učestalo mokrenje tijekom dana. Tegobe traju minimalno 3 mjeseca. 
+
+### 5. Suženje mokraćne cijevi
+
+Naprezanje i oklijevanje, slab, isprekidan ili tanak mlaz trebaju pobuditi sumnju na anatomske smetnje pražnjenja mokraćnog mjehura.
+
+### 6. Suženje gornjih dišnih putova
+
+Djeca koja hrču ili dišu na usta imaju češće noćno mokrenje. Operacija krajnika pomaže dijelu djece.
+
+## Koji su dijagnostički testovi potrebni?
+
+Svi testovi su neinvazivni i bezbolni:
+- Dnevnik mokrenja i pijenja (najbolje putem BeDRY aplikacije)
+- Analiza urina i urinokultura
+- Ca/kreatinin u urinu
+- Ultrazvuk bubrega i mokraćnog sustava
+- Mikciometrija (uroflow) za procjenu protoka mokraće
+
+
+export function BedryCta() {
+  return (
+    <section className="cta-bedry" role="region" aria-labelledby="cta-bedry-title">
+      <div className="cta-wrap">
+        <h2 id="cta-bedry-title">Kako BeDRY može pomoći?</h2>
+
+        <p>BeDRY je digitalni dnevnik mokrenja i pijenja. Vodite dnevnik kroz 2 dana (najpraktičnije je vikendom) i dobit ćete automatsko izvješće.</p>
+
+        <p>Jednostavno podijelite izvješće s vašim liječnikom unosom e-mail adrese liječnika ili korisničkog imena kojim se služi.</p>
+
+        <p className="emph">Započnite vođenje dnevnika već danas i otkrijte što je uzrok bijega mokraće!</p>
+
+        <div className="cta-actions">
+          <a className="btn btn-primary" href="https://play.google.com/store/apps/details?id=app.bedry.mobile">Preuzmi BeDRY</a>
+          <a className="btn btn-outline" href="https://bedry.app">Započni dnevnik</a>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .cta-bedry {
+          --primary: #337DFF;
+          --ink: #292A26;
+          --success: #0CC247;
+          --bg: #F8F9FB;
+          --muted: #E9ECEF;
+          color: var(--ink);
+          display: block;
+          margin: 0rem auto;
+          padding: 0 1rem;
+          max-width: 900px;
+        }
+        .cta-wrap {
+          background: var(--bg);
+          border: 1px solid var(--muted);
+          border-radius: 20px;
+          padding: 1.25rem;
+          box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+        h2 {
+          margin: 0 0 0 0;
+          font-size: 1.5rem;
+          line-height: 1.2;
+          letter-spacing: -0.01em;
+        }
+        .cta-bedry h2,
+        .dark .cta-bedry h2 {
+        color: var(--ink);
+        }
+        p { margin: 0.5rem 0; }
+        .emph { margin-top: 0.75rem; font-weight: 600; }
+        .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
+        .btn {
+          display: inline-block;
+          padding: 0.7rem 1rem;
+          border-radius: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          line-height: 1;
+          transition: transform 0.08s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+          border: 2px solid transparent;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { transform: translateY(-1px); }
+        .btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
+        .btn-outline:hover { background: rgba(41,42,38,0.06); }
+        .note { margin-top: 0.75rem; font-size: 0.9rem; color: #3b3b3b; }
+        @media (min-width: 640px) {
+          h2 { font-size: 1.8rem; }
+          .cta-wrap { padding: 1.5rem; }
+          .btn { padding: 0.8rem 1.1rem; }
+        }
+      `}</style>
+    </section>
+  );
+}
+
+<BedryCta />
+
+## Ukratko
+
+- Najčešći uzroci enureze su mali mjehur i noćna poliurija
+- Rijetki uzroci češći su kod sekundarne enureze i djece s dnevnim simptomima
+- Standardni koraci (režim pijenja i mokrenja, liječenje opstipacije, liječenje malog mjehura ili noćne poliurije) uspješni su u >90% djece
+- Ako nema uspjeha, potrebno je isključiti infekcije, hiperkalciuriju, šećernu bolest, psihološke traume, suženja i prekomjerno aktivni mokraćni mjehur
+- Testovi su jednostavni i bezbolni, većinu može započeti primarni pedijatar
+
+**Prvi korak poduzmite već danas: Preuzmite [BeDRY](https://home.bedry.app) aplikaciju, vodite digitalni dnevnik mokrenja i pijenja i ciljano liječite noćno mokrenje.**
+
+## Izvori
+
+1. Butler RJ. Nocturnal enuresis: the child’s experience. J Urol. 1997;158(2):618-621. doi:10.1016/S0022-5347(01)64219-0.
+2. Morison MJ. Parents’ and young people’s attitudes towards bedwetting and their influence on behaviour, including readiness to engage in and persist with treatment. BJU Int. 1998;81(Suppl 3):56-66. doi:10.1046/j.1464-410x.1998.00010.x.
+3. Hägglöf B, Andrén O, Bergström E, Marklund L, Wendelius M. Self-esteem before and after treatment in children with nocturnal enuresis and urinary incontinence. Scand J Urol Nephrol Suppl. 1997;183:79-82.
+4. Nevéus T, Eggert P, Evans J, Macedo A, Rittig S, Tekgül S, Vande Walle J, Yeung CK, Robson L. Evaluation and treatment of monosymptomatic enuresis – a standardization document from the International Children’s Continence Society. J Urol. 2010;183(2):441-447. doi:10.1016/j.juro.2009.10.043.
+5. Yeung CK, Sihoe JD, Sit FK, Bower W, Sreedhar B, Lau J. Characteristics of primary nocturnal enuresis in adults: an epidemiological study. BJU Int. 2000;85(9):986-990. doi:10.1046/j.1464-410X.2000.00658.x.
+6. Hrvatski zavod za javno zdravstvo. Šećerna bolest u Hrvatskoj 2005.–2014. Bilten Hrvatskog zavoda za javno zdravstvo. Zagreb: HZJZ; 2015. Dostupno na: https://www.hzjz.hr/wp-content/uploads/2013/11/DM-bilten-2005_2014.pdf
+7. Nevéus T, Fonseca E, Franco I, Kawauchi A, Kovacevic L, Nieuwhof-Leppink A, Raes A, Robson L, Walle JV, Yeung CK, Yang SS, Rittig S. Management and treatment of nocturnal enuresis – an updated standardization document from the International Children’s Continence Society. J Pediatr Urol. 2020;16(1):10-19. doi:10.1016/j.jpurol.2019.09.012.
+8. Valavi E, Ahmadzadeh A. Association between enuresis and obstructive sleep apnea-hypopnea syndrome in children. Saudi J Kidney Dis Transpl. 2011;22(5):976-981. doi:10.4103/1319-2442.84321.
+9. Bower WF, Yip SK, Yeung CK. Dysfunctional elimination symptoms in childhood and adulthood. World J Urol. 2019;37(12):2657-2664. doi:10.1007/s00345-018-2588-9.
+10. Yeung CK, Chiu HN, Sit FK. Bladder dysfunction in children with refractory monosymptomatic primary nocturnal enuresis. J Urol. 2003;170(4 Pt 2):1520-1524. doi:10.1097/01.ju.0000087074.99405.5c. 
+11. Caldwell PHY, Deshpande AV, Von Gontard A. Management of nocturnal enuresis. BMJ. 2013;347:f6259. doi:10.1136/bmj.f6259. PMID: 24191062. 
+12. Robson WL. Clinical practice. Evaluation and management of enuresis. N Engl J Med. 2009;360(14):1429-1436. doi:10.1056/NEJMcp0806780.
