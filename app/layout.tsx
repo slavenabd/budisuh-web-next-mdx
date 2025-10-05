@@ -1,10 +1,12 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import "./globals.css"
+import { inter } from '@/components/fonts';
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SITE } from "@/lib/seo"
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
@@ -37,6 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
+            <Footer />
           </div>
           <Analytics />
         </ThemeProvider>
