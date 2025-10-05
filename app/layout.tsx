@@ -25,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="hr">
       <body
-        className="antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50"
+        className="inter antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50"
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-2xl mx-auto py-10 px-4">
