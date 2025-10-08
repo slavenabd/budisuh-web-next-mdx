@@ -7,15 +7,3 @@ const nextConfig = {
 };
 
 module.exports = withContentlayer(nextConfig);
-
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/:path((?!blog/).*)',
-        destination: '/blog/:path*',
-        permanent: true,
-      },
-    ]
-  },
-}
