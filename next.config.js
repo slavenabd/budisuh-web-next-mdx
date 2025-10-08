@@ -4,18 +4,15 @@ const { withContentlayer } = require("next-contentlayer");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-};
-
-module.exports = withContentlayer(nextConfig);
-
-module.exports = {
   async redirects() {
     return [
       {
-        source: '/:path((?!blog/).*)',
-        destination: '/blog/:path*',
+        source: "/:path((?!blog/).*)",
+        destination: "/blog/:path*",
         permanent: true,
       },
-    ]
+    ];
   },
-}
+};
+
+module.exports = withContentlayer(nextConfig);
