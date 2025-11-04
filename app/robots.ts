@@ -10,5 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ["/drafts/"],
     },
     sitemap: `${SITE.domain}/sitemap.xml`,
+    host: SITE.domain,
   };
 }
