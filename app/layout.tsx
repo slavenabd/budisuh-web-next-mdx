@@ -44,16 +44,3 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   )
 }
-
-import { Analytics } from "@/components/Analytics";
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="hr">
-      <body>
-        {children}
-        <Analytics /> {/* Combined GA + Vercel tracking */}
-      </body>
-    </html>
-  );
-}
