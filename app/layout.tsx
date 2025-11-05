@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SITE } from "@/lib/seo"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
