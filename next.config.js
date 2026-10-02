@@ -137,6 +137,73 @@ const nextConfig = {
         destination: "https://home.bedry.app/hr/blog/uspjesno-lijecenje-nocnog-mokrenja",
         permanent: true,
       },
+
+      // Original WordPress URLs (pre-Next.js), still indexed / backlinked
+      {
+        source: "/moje-dijete-mokri-u-krevet-probali-smo-sve",
+        destination: "https://home.bedry.app/hr/blog/dijete-i-dalje-mokri-u-krevet-a-probali-smo-sve",
+        permanent: true,
+      },
+      {
+        source: "/dnevnik-pijenja-i-mokrenja-ispunjavanje-tumacenje",
+        destination: "https://home.bedry.app/hr/blog/dnevnik-mokrenja-pijenja-ispunjavanje-tumacenje",
+        permanent: true,
+      },
+      {
+        source: "/budi-suh-o-nama",
+        destination: "https://home.bedry.app/hr/o-nama/slaven-abdovic",
+        permanent: true,
+      },
+      {
+        source: "/kontakt",
+        destination: "https://home.bedry.app/hr/podrska",
+        permanent: true,
+      },
+      {
+        source: "/cesta-pitanja",
+        destination: "https://home.bedry.app/hr/#pitanja",
+        permanent: true,
+      },
+      {
+        source: "/upitnik-za-roditelje-enureza",
+        destination: "https://home.bedry.app/hr/blog/pretrage-za-nocno-mokrenje-kod-djece",
+        permanent: true,
+      },
+      {
+        source: "/dnevnici-upitnici",
+        destination: "https://home.bedry.app/hr/dnevnik",
+        permanent: true,
+      },
+      {
+        source: "/dnevnik-kontinencije",
+        destination: "https://home.bedry.app/hr/dnevnik",
+        permanent: true,
+      },
+      {
+        source: "/dnevnik-kontinencije-2",
+        destination: "https://home.bedry.app/hr/dnevnik",
+        permanent: true,
+      },
+      {
+        source: "/dnevnik-mokrenja-upute-preuzimanje",
+        destination: "https://home.bedry.app/hr/dnevnik",
+        permanent: true,
+      },
+      {
+        source: "/dnevnik-mokrenja-i-pijenja-upute-preuzimanje",
+        destination: "https://home.bedry.app/hr/dnevnik",
+        permanent: true,
+      },
+      {
+        source: "/odvikavanje-od-pelena",
+        destination: "https://home.bedry.app/hr/blog/odvikavanje-od-pelena",
+        permanent: true,
+      },
+      {
+        source: "/osmolalnost-urina-uspjeh-dezmopresina-kod-enureze",
+        destination: "https://home.bedry.app/hr/blog/osmolalnost-urina-uspjeh-dezmopresina-kod-enureze",
+        permanent: true,
+      },
     ];
   },
 };
