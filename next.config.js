@@ -71,6 +71,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/feed.xml",
+        destination: "https://home.bedry.app/hr/blog/feed.xml",
+        permanent: true,
+      },
+      {
+        source: "/atom.xml",
+        destination: "https://home.bedry.app/hr/blog/feed.xml",
+        permanent: true,
+      },
+      {
+        source: "/feed.json",
+        destination: "https://home.bedry.app/hr/blog/feed.xml",
+        permanent: true,
+      },
+      {
+        source: "/images/enureza-upitnik-za-roditelje.pdf",
+        destination: "https://home.bedry.app/hr/blog/files/enureza-upitnik-za-roditelje.pdf",
+        permanent: true,
+      },
+      {
         source: "/",
         destination: "https://home.bedry.app/hr/",
         permanent: true,
