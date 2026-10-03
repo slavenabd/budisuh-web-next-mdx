@@ -92,7 +92,7 @@ const nextConfig = {
       },
       {
         source: "/",
-        destination: "https://home.bedry.app/hr/",
+        destination: "https://home.bedry.app/hr/blog/",
         permanent: true,
       },
 
